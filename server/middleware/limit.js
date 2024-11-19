@@ -89,33 +89,33 @@ exports.limit = (method) => {
   // Define rate limit settings based on the HTTP method
   switch (method) {
     case "login":
-      windowMs = 3 * 60 * 1000; // 3 minutes
-      max = 3000;
+      windowMs = 3 * 60 * 1000; // 3 minutos
+      max = 3;
       message = "Please wait 3 minutes before trying again.";
       break;
     case "get":
-      windowMs = 15 * 60 * 1000; // 15 minutes
-      max = 2500;
+      windowMs = 15 * 60 * 1000; // 15 minutos
+      max = 25;
       message = "Rate limit exceeded. Please try again later.";
       break;
     case "post":
-      windowMs = 15 * 60 * 1000; // 15 minutes
-      max = 4500;
+      windowMs = 15 * 60 * 1000; // 15 minutos
+      max = 45;
       message = "Rate limit exceeded. Please try again later.";
       break;
     case "delete":
-      windowMs = 10 * 60 * 1000; // 10 minutes
-      max = 1000;
+      windowMs = 10 * 60 * 1000; // 10 minutos
+      max = 10;
       message = "Rate limit exceeded. Please try again later.";
       break;
     case "put":
-      windowMs = 15 * 60 * 1000; // 15 minutes
-      max = 4500;
+      windowMs = 15 * 60 * 1000; // 15 minutos
+      max = 45;
       message = "Rate limit exceeded. Please try again later.";
       break;
     default:
-      windowMs = 15 * 60 * 1000; // 15 minutes
-      max = 2500;
+      windowMs = 15 * 60 * 1000; // 15 minutos
+      max = 25;
       message = "Rate limit exceeded. Please try again later.";
       break;
   }

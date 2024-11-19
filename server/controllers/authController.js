@@ -40,7 +40,7 @@ class AuthController {
       });
     }
   }
-  user;
+  
   static async logIn(req, res) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
