@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
 
+// const uri = `${process.env.MONGO_PROTOCOLO}${process.env.MONGO_USER}:${process.env.MONGO_PSW}@${process.env.MONGO_HOST}/${process.env.MONGO_DB_NAME}`;
+// console.log(uri);
+
 class db {
   constructor() {
     this._connect();
